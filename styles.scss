@@ -1,0 +1,185 @@
+@import '~bootstrap/scss/bootstrap';
+@import '/node_modules/animate.css/animate.css';
+
+$home-font: 'Helvetica Neue', sans-serif;
+
+body {
+    @extend .bg-light;
+    background: #F5F5F5;
+    font: $home-font;
+    overflow-x: hidden;
+    @extend .w-100;
+    max-width: 100%;
+}
+
+main {
+    overflow-x: hidden;
+    @extend .w-100;
+    max-width: 100%;
+}
+
+// mixins
+
+@mixin flex($direction, $justify, $align, $text ) {
+    @extend .d-flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $text;
+}
+
+.flex-center {
+    @include flex(column, center, center, center);   
+}
+.flex-left {
+    @include flex(column, center, flex-start, left);   
+}
+.flex-right {
+    @include flex(column, center, flex-end, right);   
+}
+
+// links
+
+a {
+    color: inherit;
+    transition: .2s ease-in-out;
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+// external links
+
+.x-link {
+    color: $primary;
+}
+.x-link:hover {
+    text-decoration: underline;
+}
+
+// utilities
+
+// height
+
+.min-25 {
+    min-height: 25vh;
+}
+.min-50 {
+    min-height: 50vh;
+}
+.min-100 {
+    min-height: 100vh;
+}
+
+// position
+
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
+}
+.right {
+    right: 0;
+}
+.left {
+    left: 0;
+}
+
+// colors
+
+.bg-white {
+    background: #fff;
+}
+
+// images
+
+.img-full {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+// background images
+
+.bg--jaxx {
+    background: url("/img/jaxx-bg.png") center;
+    background-size: cover;
+}
+
+// navigation/menu
+
+.navbar {
+    transition: all .3s ease-in-out;
+}
+
+// card styles
+
+.card {
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
+
+.card:hover, 
+.card:focus {
+    box-shadow: 0 0 20px #000;
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+// animations
+
+.fadeIn {
+    animation: fadeIn 1s cubic-bezier(0.37, -0.46, 0.61, 1.48);
+}
+@keyframes fadeIn {
+    0% {opacity: 0; transform: translateY(-100px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+// delays
+
+.delay-01 {
+    animation-delay: .1s;
+}
+.delay-03 {
+    animation-delay: .3s;
+}
+.delay-06 {
+    animation-delay: .6s;
+}
+.delay-09 {
+    animation-delay: .9s;
+}
+
+.animation-class {
+    /* default animation rules */
+  }
+  
+  html.is-animating .animation-class {
+    /* CSS styles when animating  */
+  }
+  
+  html.is-changing .animation-class {
+    /* CSS styles when changing  */
+  }
+  
+  html.is-leaving .animation-class {
+    /* CSS styles when leaving  */
+  }
+  
+  html.is-rendering .animation-class {
+    /* CSS styles when rendering  */
+  }
+
+  
+
+// scroll to top button
+
+#scrollTop > p {
+    transition: all .3s ease-in-out;
+}
+#scrollTop > p:hover {
+    @extend .text-light, .bg-dark, .border-dark;
+    cursor: pointer;
+}
