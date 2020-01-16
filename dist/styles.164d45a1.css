@@ -9861,7 +9861,7 @@ button.bg-dark:focus {
   display: table-cell !important;
 }
 
-.d-flex, .flex-right, .flex-left, .flex-center {
+.d-flex {
   display: flex !important;
 }
 
@@ -13514,6 +13514,7 @@ main {
 }
 
 .flex-center {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -13521,6 +13522,7 @@ main {
 }
 
 .flex-left {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -13528,6 +13530,7 @@ main {
 }
 
 .flex-right {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
@@ -13655,6 +13658,16 @@ html.is-animating .transition-fade {
 
 #scrollTop > p:hover {
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .flex-center-sm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=/styles.164d45a1.css.map */

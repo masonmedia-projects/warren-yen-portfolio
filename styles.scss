@@ -21,7 +21,7 @@ main {
 // mixins
 
 @mixin flex($direction, $justify, $align, $text ) {
-    @extend .d-flex;
+    display: flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
@@ -175,4 +175,12 @@ a:hover, a:focus {
 #scrollTop > p:hover {
     @extend .text-light, .bg-dark, .border-dark;
     cursor: pointer;
+}
+
+// media queries
+
+@media (max-width: 768px) {
+    .flex-center-sm {
+        @include flex(column, center, center, center);   
+    }
 }

@@ -22,9 +22,27 @@ I've commented the code in both `index.html` (home page template) and `jaxxliber
 
 1. Your CSS is in the `styles.scss` file.  I've used bootstrap 4 and imported its styles into the main stylesheet, and you can write plain CSS or use SASS.
 2. Bootstrap uses "functional" CSS where styles are separated into "utility" classes that reduce styling to the smallest possible components for single-use. Padding, margin, grid, borders, colors, etc., are all given their own classes that are added directly to the HTML. They can be used or you can write your own styles depending on what you need. Check out the [Bootstrap docs for more info](https://getbootstrap.com/docs/4.4/getting-started/introduction/).
-3. Links: I added a class `.x-link` for external links (i.e. your "see sample" links on the detail page). To remove stock anchor styling on navigation and home page project links, only anchors with the `.x-link` class will behave like native web links (blue color, underline on hover, etc). You can control or change that in the css under `//links`. 
 
-### New pages
+#### Classes
+
+1. Links: I added a class `.x-link` for external links (i.e. your "see sample" links on the detail page). To remove stock anchor styling on navigation and home page project links, only anchors with the `.x-link` class will behave like native web links (blue color, underline on hover, etc). You can control or change that in the css under `//links`. 
+2. Alignment: bootstrap uses flexbox for layout and alignment. 
+    - for centered elements, use `.flex-center`;
+    - for left-aligned elements, use `.flex-left`;
+    - for right-aligned elements, use `.flex-right`;
+    - to center-align elements only at mobile, add `.flex-center-sm` to your existing classes;*
+
+*Most of the text is left-aligned, but anything that needs to be centered at mobile breakpoints, use the `.flex-center-sm` class. This takes any previous alignment and forces it to be centered at `768px` and below.
+
+i.e. You could use the following to have left-aligned content on desktop and tablet, and centered content on mobile:
+
+```
+<div class="flex-left flex-center-sm">
+    <h1>Some content</h1>
+</div>
+```
+
+### Adding pages/projects
 
 You'll want to add new pages in the root folder (same folder as `index.html` and `about.html`). You can use the index.html page as a template: copy it, create a new file, paste in the code and make your edits.
 
