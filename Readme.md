@@ -2,7 +2,7 @@
 
 ## Setup
 
-1. Clone/download repo from github <!--url here-->
+1. Clone/download repo from github [here](https://github.com/masonmedia/warren_yen_portfolio).
 2. Open terminal (press command + space bar to open, and type `terminal`) and `cd` (change directory) into the project folder (`cd warren_yen_portfolio`).
 3. Once in the project folder, type `npm init` to download needed dependencies (node modules).
 4. To start a development server that will refresh whenever you make and save changes, type `parcel index.html`.

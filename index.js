@@ -1,19 +1,13 @@
 import 'bootstrap';
 import Swup from 'swup';
-import SwupOverlayTheme from '@swup/overlay-theme';
 import AOS from 'aos';
 import smoothscroll from 'smoothscroll-polyfill';
 import './styles.scss';
 
 // swup
-const swup = new Swup({
-    // animateHistoryBrowsing: true,
-    plugins: [new SwupOverlayTheme({
-        color: '#F5F5F5'
-        // color: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);'
-    })]
-});
+const swup = new Swup();
 
+// animate nav links
 const navAnimate = () => {
     let x = document.querySelectorAll(".nav-item");
     let i;
@@ -70,8 +64,6 @@ const navScroll = () => {
     }
 };
 
-// animations
-
 // init all functions
 navAnimate();
 scrollTopPageChange();
@@ -81,7 +73,7 @@ scrollTopButton();
 smoothscroll.polyfill();
 navScroll();
 
-// js reload on view change
+// js reload on page change
 swup.on('contentReplaced', () => {
     navAnimate();
     scrollTopPageChange();

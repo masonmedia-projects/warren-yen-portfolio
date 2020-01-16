@@ -129,6 +129,19 @@ a:hover, a:focus {
 
 // animations
 
+// page transition animations
+
+.transition-fade {
+    transition: 0.5s;
+    opacity: 1;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }
+
+// basic page fade in
+
 .fadeIn {
     animation: fadeIn 1s cubic-bezier(0.37, -0.46, 0.61, 1.48);
 }
@@ -151,26 +164,6 @@ a:hover, a:focus {
 .delay-09 {
     animation-delay: .9s;
 }
-
-.animation-class {
-    /* default animation rules */
-  }
-  
-  html.is-animating .animation-class {
-    /* CSS styles when animating  */
-  }
-  
-  html.is-changing .animation-class {
-    /* CSS styles when changing  */
-  }
-  
-  html.is-leaving .animation-class {
-    /* CSS styles when leaving  */
-  }
-  
-  html.is-rendering .animation-class {
-    /* CSS styles when rendering  */
-  }
 
   
 
