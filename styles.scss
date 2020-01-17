@@ -185,6 +185,9 @@ a:hover, a:focus {
         border-bottom: 1px solid lightgrey;   
         padding: 13px 0;
     }
+    .navbar-nav li:nth-of-type(1) {
+        border-top: 1px solid lightgrey;   
+    }
 }
 @media (max-width: 768px) {
     .flex-center-sm {

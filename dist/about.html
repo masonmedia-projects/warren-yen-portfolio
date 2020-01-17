@@ -51,23 +51,35 @@ _gaq.push(['_trackPageview']);
   var s = document.getElementsByTagName('script')[0];
   s.parentNode.insertBefore(ga, s);
 })();</script>
-</head>
+<link rel="stylesheet" href="/warren_site.e31bb0bc.css"></head>
   <body>
       <main id="swup" class="transition-fade fadeIn">
           <!-- nav -->
-            <h1 id="openNav" class="float-right text-dark h3 p-4">&#8801;</h1>
-              <div id="myNav" class="overlay d-flex">
-                  <a id="closeNav" class="closebtn">
-                    <p class="h2 font-weight-light">&#x2715;</p>
-                  </a>
-                  <div class="overlay-content d-flex flex-column justify-content-center align-items-start w-100 p-5">
-                    <a class="nav-link" href="/index.html">Home</a>
-                    <a class="nav-link" href="/about.html">About Me</a>
-                    <a class="nav-link" href="/jaxxliberty.html">Jaxx Liberty</a>
-                    <a class="nav-link" href="#">Contact</a>
-                  </div>
-                </div>
-              <!-- /nav -->
+          <nav id="myNav" class="navbar fixed-top navbar-expand-lg bg-light">
+              <a class="nav-item navbar-brand" href="/index.html">Warren Yen</a>
+              <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navCollapse" aria-controls="hamburgerMenu" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>	
+              </button>
+
+              <div class="collapse navbar-collapse" id="navCollapse">
+                  <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/about.html">About Me</a>
+                      </li>
+                      <!-- resume PDF doc -->
+                      <li class="nav-item">
+                          <a class="nav-link" href="PUT YOUR RESUME PDF DOC URL HERE" download="">Resume</a>
+                      </li>
+                      <!-- resume PDF doc -->
+                  </ul>
+              </div>
+          </nav>
+          <!-- /nav -->
               <div class="container">
                 <!-- header -->
                 <div class="row pt-5">
