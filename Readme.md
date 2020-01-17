@@ -68,14 +68,12 @@ Put your images in the `img` folder. In the `parcel build index.js` process, the
 
 ### Animation
 
-1. The basic page transition animation is a fade in and out, with an added `.fadeIn` class that fades the page in and down. 
-2. 
-
-3. The scroll animation (fade) is from a library called AOS (animate on scroll). Add `data-aos="fade"` directly in the HTML to the element you want to animate. It can go on any div or section you want to fade in on scroll. More animation options are at [aos.com](https://michalsnik.github.io/aos/).
+1. The basic page transition animation is a fade in and out, controlled by the `.transition-fade` class under `// #swup animations` in the CSS. There's also an added `.fadeIn` class that fades the page in and down. 
+2. The scroll animation (fade) is from a library called AOS (animate on scroll). Add `data-aos="fade"` directly in the HTML to the element you want to animate. It can go on any div or section you want to fade in on scroll. More animation options are at [aos.com](https://michalsnik.github.io/aos/).
 
 ### Code Editor
 
-I use VS Code (same as Decentral). It has a built-in terminal and github connection functionality which is super useful.
+I use VS Code (same as Decentral). It has a built-in terminal and github connection functionality which is super useful. Download [here](https://code.visualstudio.com/).
 
 ### Resume
 
