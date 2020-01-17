@@ -30,7 +30,7 @@ I've commented the code in both `index.html` (home page template) and `jaxxliber
     - for centered elements, use `.flex-center`;
     - for left-aligned elements, use `.flex-left`;
     - for right-aligned elements, use `.flex-right`;
-    - to center-align elements only at mobile, add `.flex-center-sm` to your existing classes;*
+    - to center-align elements only at mobile, add `.flex-center-sm` to your existing classes*
 
 *Most of the text is left-aligned, but anything that needs to be centered at mobile breakpoints, use the `.flex-center-sm` class. This takes any previous alignment and forces it to be centered at `768px` and below.
 
@@ -68,28 +68,10 @@ Put your images in the `img` folder. In the `parcel build index.js` process, the
 
 ### Animation
 
-1. The grey overlay between page changes can be customized or removed. 
-2. To edit, go to `index.js`
-3. To change the color, change the css `color` declaration to whatever you want.
-4. To remove the overlay animation -- which will result in a simple fade in and slide down from the top on page changes -- either comment out or delete the second swup declaration in (as below):
+1. The basic page transition animation is a fade in and out, with an added `.fadeIn` class that fades the page in and down. 
+2. 
 
-`import SwupOverlayTheme from '@swup/overlay-theme';
-`
-and then remove the `plugins:` line from inside the const swup function:
-
-from:
-```
-const swup = new Swup({
-    plugins: [new SwupOverlayTheme({
-        color: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);'
-    })]
-});
-```
-to:
-
-`const swup = new Swup();`
-
-5. The scroll animation (fade) is from a library called AOS (animate on scroll). Add `data-aos="fade"` directly in the HTML to the element you want to animate. It can go on any div or section you want to fade in on scroll. More animation options are at [aos.com](https://michalsnik.github.io/aos/).
+3. The scroll animation (fade) is from a library called AOS (animate on scroll). Add `data-aos="fade"` directly in the HTML to the element you want to animate. It can go on any div or section you want to fade in on scroll. More animation options are at [aos.com](https://michalsnik.github.io/aos/).
 
 ### Code Editor
 

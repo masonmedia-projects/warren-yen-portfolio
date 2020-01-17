@@ -3,7 +3,6 @@ import Swup from 'swup';
 import AOS from 'aos';
 import smoothscroll from 'smoothscroll-polyfill';
 import './styles.scss';
-
 // swup
 const swup = new Swup();
 
@@ -83,3 +82,4 @@ swup.on('contentReplaced', () => {
     scrollTopButton();
     smoothscroll.polyfill();
 });
+
