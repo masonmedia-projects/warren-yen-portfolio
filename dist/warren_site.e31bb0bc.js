@@ -19760,18 +19760,15 @@ require("./styles.scss");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // swup
-var swup = new _swup.default(); // animate nav links
+var swup = new _swup.default(); // close mobile menu on link click
 
-var navAnimate = function navAnimate() {
-  var x = document.querySelectorAll(".nav-item");
+var navAttribute = function navAttribute() {
+  var nav = document.querySelectorAll(".nav-item");
   var i;
 
-  for (i = 0; i < x.length; i++) {
-    x[i].classList.add("animated", "zoomIn");
-    x[0].classList.add("delay-01");
-    x[1].classList.add("delay-03");
-    x[2].classList.add("delay-06");
-    x[3].classList.add("delay-09");
+  for (i = 0; i < nav.length; i++) {
+    nav[i].setAttribute("data-toggle", "collapse");
+    nav[i].setAttribute("data-target", ".navbar-collapse");
   }
 }; // copyright get current year
 
@@ -19823,7 +19820,7 @@ var navScroll = function navScroll() {
 }; // init all functions
 
 
-navAnimate();
+navAttribute();
 scrollTopPageChange();
 copyright();
 aosAnimate();
@@ -19834,7 +19831,7 @@ _smoothscrollPolyfill.default.polyfill();
 navScroll(); // js reload on page change
 
 swup.on('contentReplaced', function () {
-  navAnimate();
+  navAttribute();
   scrollTopPageChange();
   navScroll();
   copyright();
@@ -19871,7 +19868,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50223" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49835" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

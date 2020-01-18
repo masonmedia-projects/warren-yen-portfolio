@@ -3,19 +3,17 @@ import Swup from 'swup';
 import AOS from 'aos';
 import smoothscroll from 'smoothscroll-polyfill';
 import './styles.scss';
+
 // swup
 const swup = new Swup();
 
-// animate nav links
-const navAnimate = () => {
-    let x = document.querySelectorAll(".nav-item");
+// close mobile menu on link click
+const navAttribute = () => {
+    let nav = document.querySelectorAll(".nav-item");
     let i;
-    for (i = 0; i < x.length; i++) {
-        x[i].classList.add("animated", "zoomIn");
-        x[0].classList.add("delay-01");
-        x[1].classList.add("delay-03");
-        x[2].classList.add("delay-06");
-        x[3].classList.add("delay-09");
+    for (i = 0; i < nav.length; i++) {
+        nav[i].setAttribute("data-toggle", "collapse");
+        nav[i].setAttribute("data-target", ".navbar-collapse");
     }
 }
 
@@ -64,7 +62,7 @@ const navScroll = () => {
 };
 
 // init all functions
-navAnimate();
+navAttribute();
 scrollTopPageChange();
 copyright();
 aosAnimate();
@@ -74,7 +72,7 @@ navScroll();
 
 // js reload on page change
 swup.on('contentReplaced', () => {
-    navAnimate();
+    navAttribute();
     scrollTopPageChange();
     navScroll();
     copyright();

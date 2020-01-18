@@ -68,8 +68,9 @@ Put your images in the `img` folder. In the `parcel build index.js` process, the
 
 ### Animation
 
-1. The basic page transition animation is a fade in and out, controlled by the `.transition-fade` class under `// #swup animations` in the CSS. There's also an added `.fadeIn` class that fades the page in and down. 
-2. The scroll animation (fade) is from a library called AOS (animate on scroll). Add `data-aos="fade"` directly in the HTML to the element you want to animate. It can go on any div or section you want to fade in on scroll. More animation options are at [aos.com](https://michalsnik.github.io/aos/).
+1. The basic page transition animation is a fade in and out, controlled by the `.transition-fade` class under `// #swup animations` in the CSS. It isn't active, but I also made a `.fadeIn` class that you can add to any element that will fade it in and down. 
+2. The scroll animation (fading in and up) is from a library called AOS (animate on scroll). Add `data-aos="fade"` directly in the HTML to the element you want to animate. It can go on any div, element, image, whatever you want to fade in on scroll. More animation options are at [aos.com](https://michalsnik.github.io/aos/).
+3. Scroll animation options/parameters are in the `index.js` file under `// AOS scroll animation`. You can control speed, duration, offset, etc.
 
 ### Code Editor
 
