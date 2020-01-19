@@ -9,12 +9,20 @@ const swup = new Swup();
 
 // close mobile menu on link click
 const navAttribute = () => {
-    let nav = document.querySelectorAll(".nav-item");
-    let i;
-    for (i = 0; i < nav.length; i++) {
-        nav[i].setAttribute("data-toggle", "collapse");
-        nav[i].setAttribute("data-target", ".navbar-collapse");
-    }
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            let nav = document.querySelectorAll(".nav-item");
+            let i;
+            for (i = 0; i < nav.length; i++) {
+                nav[i].setAttribute("data-toggle", "collapse");
+                nav[i].setAttribute("data-target", ".navbar-collapse");
+            }
+        }
+      }
+      
+      var x = window.matchMedia("(max-width: 992px)")
+      myFunction(x) // Call listener function at run time
+      x.addListener(myFunction) // Attach listener function on state changes
 }
 
 // copyright get current year

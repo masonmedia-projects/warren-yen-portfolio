@@ -13662,18 +13662,16 @@ html.is-animating .transition-fade {
   opacity: 0;
 }
 
-.fadeIn {
+.fadeIn, main {
   animation: fadeIn 1s cubic-bezier(0.37, -0.46, 0.61, 1.48);
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateY(-100px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 .delay-01 {

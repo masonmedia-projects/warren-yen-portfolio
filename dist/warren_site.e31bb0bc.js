@@ -19763,13 +19763,23 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var swup = new _swup.default(); // close mobile menu on link click
 
 var navAttribute = function navAttribute() {
-  var nav = document.querySelectorAll(".nav-item");
-  var i;
+  function myFunction(x) {
+    if (x.matches) {
+      // If media query matches
+      var nav = document.querySelectorAll(".nav-item");
+      var i;
 
-  for (i = 0; i < nav.length; i++) {
-    nav[i].setAttribute("data-toggle", "collapse");
-    nav[i].setAttribute("data-target", ".navbar-collapse");
+      for (i = 0; i < nav.length; i++) {
+        nav[i].setAttribute("data-toggle", "collapse");
+        nav[i].setAttribute("data-target", ".navbar-collapse");
+      }
+    }
   }
+
+  var x = window.matchMedia("(max-width: 992px)");
+  myFunction(x); // Call listener function at run time
+
+  x.addListener(myFunction); // Attach listener function on state changes
 }; // copyright get current year
 
 
@@ -19868,7 +19878,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49835" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49745" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
