@@ -13506,7 +13506,7 @@ h3 {
   height: 2px;
   background-color: #000;
   display: block;
-  transition: all 0.2s;
+  transition: all 0.3s;
   margin-top: 4px;
 }
 
@@ -13662,7 +13662,7 @@ html.is-animating .transition-fade {
   opacity: 0;
 }
 
-.fadeIn, main {
+.fadeIn, body {
   animation: fadeIn 1s cubic-bezier(0.37, -0.46, 0.61, 1.48);
 }
 
