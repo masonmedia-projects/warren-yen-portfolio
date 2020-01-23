@@ -46,8 +46,17 @@ a {
     color: inherit;
     transition: .2s ease-in-out;
 }
+
 a:hover, a:focus {
     text-decoration: none;
+}
+
+a:focus {
+    outline:0;
+}
+
+button:focus {
+    outline:0;
 }
 
 // external links
@@ -68,6 +77,9 @@ a:hover, a:focus {
 }
 .min-50 {
     min-height: 50vh;
+}
+.min-75 {
+    min-height: 75vh;
 }
 .min-100 {
     min-height: 100vh;
@@ -104,15 +116,16 @@ a:hover, a:focus {
 
 // background images
 
+@mixin bgImg($url, $size, $position, $attachment) {
+    background: $url;
+    background-size: $size;
+    background-position: $position;
+    background-attachment: $attachment;
+}
+
 .bg--jaxx {
     background: url("/img/jaxx-bg.png") center;
     background-size: cover;
-}
-
-// navigation/menu
-
-.navbar {
-    transition: all .3s ease-in-out;
 }
 
 // card styles

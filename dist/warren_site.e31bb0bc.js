@@ -19822,9 +19822,9 @@ var navScroll = function navScroll() {
 
   window.onscroll = function () {
     if (window.scrollY >= 70) {
-      myNav.classList.add("bg-white");
+      myNav.classList.add("bg-white", "shadow");
     } else {
-      myNav.classList.remove("bg-white");
+      myNav.classList.remove("bg-white", "shadow");
     }
   };
 }; // init all functions
@@ -19878,7 +19878,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50632" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52800" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

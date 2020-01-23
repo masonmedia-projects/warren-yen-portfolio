@@ -61,10 +61,10 @@ const navScroll = () => {
     window.scrollY >= 70
     window.onscroll = function () { 
         if (window.scrollY >= 70) {
-            myNav.classList.add("bg-white");
+            myNav.classList.add("bg-white", "shadow");
         } 
         else {
-            myNav.classList.remove("bg-white");
+            myNav.classList.remove("bg-white", "shadow");
         }
     }
 };

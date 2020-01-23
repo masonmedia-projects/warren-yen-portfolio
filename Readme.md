@@ -41,6 +41,8 @@ i.e. You could use the following to have left-aligned content on desktop and tab
     <h1>Some content</h1>
 </div>
 ```
+3. Background images:  
+
 
 ### Adding pages/projects
 

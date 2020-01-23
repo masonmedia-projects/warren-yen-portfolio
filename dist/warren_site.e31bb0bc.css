@@ -13501,6 +13501,14 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.navbar {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand > img {
+  width: 130px;
+}
+
 .icon-bar {
   width: 22px;
   height: 2px;
@@ -13586,6 +13594,14 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+a:focus {
+  outline: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
 .x-link {
   color: #007bff;
 }
@@ -13600,6 +13616,10 @@ a:hover, a:focus {
 
 .min-50 {
   min-height: 50vh;
+}
+
+.min-75 {
+  min-height: 75vh;
 }
 
 .min-100 {
@@ -13635,10 +13655,6 @@ a:hover, a:focus {
 .bg--jaxx {
   background: url("/jaxx-bg.b78de2bb.png") center;
   background-size: cover;
-}
-
-.navbar {
-  transition: all 0.3s ease-in-out;
 }
 
 .card {
