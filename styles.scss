@@ -1,6 +1,7 @@
 @import '~bootstrap/scss/bootstrap';
 @import '/node_modules/animate.css/animate.css';
 @import '/menu.scss';
+@import '/animations.scss';
 
 $home-font: 'Helvetica Neue', sans-serif;
 
@@ -141,29 +142,7 @@ button:focus {
     text-decoration: none;
     transform: translateY(-5px);
 }
-
-// animations
-
-// page transition animations
-
-.transition-fade {
-    transition: 0.5s;
-    opacity: 1;
-  }
   
-  html.is-animating .transition-fade {
-    opacity: 0;
-  }
-
-// basic page fade in
-
-.fadeIn {
-    animation: fadeIn 1s cubic-bezier(0.37, -0.46, 0.61, 1.48);
-}
-@keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
 
 // delays
 

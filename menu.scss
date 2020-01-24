@@ -8,6 +8,12 @@
   width: 130px;
 }
 
+// menu active class
+
+.active {
+  @extend .font-weight-bold;
+}
+
 
 // hamburger X
 

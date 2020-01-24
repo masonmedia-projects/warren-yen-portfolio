@@ -1,4 +1,5 @@
 import 'bootstrap';
+import 'jquery';
 import Swup from 'swup';
 import AOS from 'aos';
 import smoothscroll from 'smoothscroll-polyfill';
@@ -58,7 +59,6 @@ const scrollTopButton = () => {
 // nav color change on scroll
 const navScroll = () => {
     const myNav = document.getElementById('myNav');
-    window.scrollY >= 70
     window.onscroll = function () { 
         if (window.scrollY >= 70) {
             myNav.classList.add("bg-white", "shadow");
@@ -68,6 +68,15 @@ const navScroll = () => {
         }
     }
 };
+
+// add active state on resume click
+
+const resumeActive = () => {
+    const resumeLink = document.getElementById("resumeActive");resumeLink.addEventListener("click", function() { 
+        resumeLink.classList.add("font-weight-bold");
+    });
+  }
+resumeActive();
 
 // init all functions
 navAttribute();
@@ -87,5 +96,6 @@ swup.on('contentReplaced', () => {
     aosAnimate();
     scrollTopButton();
     smoothscroll.polyfill();
+    resumeActive();
 });
 
