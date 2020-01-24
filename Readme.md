@@ -52,7 +52,8 @@ You'll want to add new pages in the root folder (same folder as `index.html` and
 
 #### Home
 
-Be aware that card titles and text length will need to be relatively similar throughout if you want to keep the heights the same. Longer text in one card will force the entire card element down to accomodate.
+1. Be aware that card titles and text length will need to be relatively similar throughout if you want to keep the heights the same. Longer text in one card will force the entire card element down to accomodate.
+2. On the home page, the main page container uses a `.container-fluid` class, which has less padding. On the detail page, your mockups had more padding so I used the `.container` class. You can swap between them if you feel there is 
 
 #### Detail [Jaxx Liberty]
 
