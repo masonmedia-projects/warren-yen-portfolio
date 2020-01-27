@@ -16,7 +16,8 @@ you use.
 
 ### Dev server and build bugs to be aware of
 
-1. Sometimes changes you make don't show up in the browser when you save and refresh the page. If you find your changes aren't working or you're seeing other issues, you may need to
+1. Type `parcel index.html` into your terminal to start the dev server; changes should show up automatically after saving.
+2. Sometimes changes you make won't show up in the browser when you save and refresh the page. If you find your changes aren't working or you're seeing other issues, you may need to
 a) quit and restart the dev server: 
 - type `control` and `c` to quit;
 - then `parcel index.html` to restart 
