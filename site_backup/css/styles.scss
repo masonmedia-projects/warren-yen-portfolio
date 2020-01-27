@@ -173,7 +173,6 @@ button:focus {
 
 // media queries
 
-// add bottom border on nav links mobile menu
 @media (max-width: 992px) {
     .nav-link {
         border-bottom: 1px solid lightgrey;   
@@ -183,27 +182,10 @@ button:focus {
         border-top: 1px solid lightgrey;   
     }
 }
-
-// center content class on mobile
 @media (max-width: 768px) {
     .flex-center-sm {
         @include flex(column, center, center, center);   
     }
-    .container {
-        padding: 3rem;
-    }
 }
-
-// reduce container padding on mobile
-@media (max-width: 601px) {
-    .container {
-        padding: 15px;
-    }
-    .jumbotron {
-        margin-top: 30px;
-    }
-}
-
-
 
 

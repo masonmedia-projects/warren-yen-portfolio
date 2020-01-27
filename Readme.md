@@ -3,10 +3,10 @@
 ## Setup
 
 1. Clone/download repo from github [here](https://github.com/masonmedia/warren_yen_portfolio).
-2. Open terminal (press command + space bar to open, and type `terminal`) and `cd` (change directory) into the project folder (`cd warren_yen_portfolio`).
+2. Open terminal (on Mac press command + space bar to open a search window, and type `terminal`). In the Terminal window type `cd` (change directory) into the project folder (`cd warren_yen_portfolio`).
 3. Once in the project folder, type `npm init` to download needed dependencies (node modules).
-4. To start a development server that will refresh whenever you make and save changes, type `parcel index.html`.
-5. Open up `index.html`, `styles.scss` and start editing.
+4. To start a development server that will refresh whenever you make and save changes, type `parcel index.html`. Note -- this automatically creates a `dist` folder that is the compiled code. Don't edit anything in here.
+5. Open up files (`index.html`, `styles.scss`, etc.) and start editing.
 6. Fork my git repo to create your own separate thread to store your code, or create a completely new one of your own if you want to have it be private etc.
 7. When ready to build and deploy the site, type `parcel build index.js`. Parcel will create a `dist` folder which will be your production ready folder to be pushed to your server. 
 8. Depending on your server/hosting setup, you can compress the `dist` folder into a .zip file and push, or use ssh, gihub, whatever

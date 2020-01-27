@@ -13925,6 +13925,19 @@ button:focus {
     align-items: center;
     text-align: center;
   }
+
+  .container {
+    padding: 3rem;
+  }
+}
+@media (max-width: 601px) {
+  .container {
+    padding: 15px;
+  }
+
+  .jumbotron {
+    margin-top: 30px;
+  }
 }
 
 /*# sourceMappingURL=/warren_site.e31bb0bc.css.map */
