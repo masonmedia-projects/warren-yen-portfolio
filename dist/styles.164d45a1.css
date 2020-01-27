@@ -10944,7 +10944,7 @@ button.bg-dark:focus {
   width: 75% !important;
 }
 
-.w-100, main, body {
+.w-100, .img, main, body {
   width: 100% !important;
 }
 
@@ -13869,6 +13869,10 @@ button:focus {
   background: #fff;
 }
 
+.img {
+  height: auto;
+}
+
 .img-full {
   height: 100%;
   width: 100%;
@@ -13890,6 +13894,13 @@ button:focus {
   box-shadow: 0 0 20px #000;
   text-decoration: none;
   transform: translateY(-5px);
+}
+
+.card-img, .card-img-top {
+  flex-shrink: 0;
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .delay-01 {
@@ -13941,7 +13952,7 @@ button:focus {
 }
 @media (max-width: 601px) {
   .container {
-    padding: 15px;
+    padding: 22px;
   }
 
   .jumbotron {

@@ -110,6 +110,10 @@ button:focus {
 
 // images
 
+.img {
+    @extend .w-100;
+    height: auto;   
+}
 .img-full {
     height: 100%;
     width: 100%;
@@ -143,7 +147,13 @@ button:focus {
     text-decoration: none;
     transform: translateY(-5px);
 }
-  
+
+.card-img, .card-img-top {
+    flex-shrink: 0;
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}  
 
 // delays
 
@@ -198,7 +208,7 @@ button:focus {
 // reduce container padding on mobile
 @media (max-width: 601px) {
     .container {
-        padding: 15px;
+        padding: 22px;
     }
     .jumbotron {
         margin-top: 30px;

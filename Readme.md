@@ -14,7 +14,7 @@
 2. Depending on your server/hosting setup, you can compress the `dist` folder into a .zip file and push, or use ssh, gihub, whatever
 you use.
 
-### Live server and build bugs to be aware of
+### Dev server and build bugs to be aware of
 
 1. Sometimes changes you make don't show up in the browser when you save and refresh the page. If you find your changes aren't working or you're seeing other issues, you may need to
 a) quit and restart the dev server: 
@@ -29,7 +29,13 @@ c) when creating new pages, parcel may throw an error if you create a link to a 
 
 ## HTML
 
-I've commented the code in both `index.html` (home page template) and `jaxxliberty.html` (detail page template) to show the copy/pastable components to add more content. 
+I've commented the code in both `index.html` (home page template) and `jaxxliberty.html` + `Metric Dashboard` (detail page templates) to show the copy/pastable components to add more content. 
+
+## Meta tags
+
+In the header are all your meta tags. Most of them are commented, but the key ones to change on each page are the:
+- title
+- description [really only necessary for SEO, not essential] 
 
 ## Assets
 
