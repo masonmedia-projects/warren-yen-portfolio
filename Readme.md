@@ -4,13 +4,28 @@
 
 1. Clone/download repo from github [here](https://github.com/masonmedia/warren_yen_portfolio).
 2. Open terminal (on Mac press command + space bar to open a search window, and type `terminal`). In the Terminal window type `cd` (change directory) into the project folder (`cd warren_yen_portfolio`).
-3. Once in the project folder, type `npm init` to download needed dependencies (node modules).
-4. To start a development server that will refresh whenever you make and save changes, type `parcel index.html`. Note -- this automatically creates a `dist` folder that is the compiled code. Don't edit anything in here.
-5. Open up files (`index.html`, `styles.scss`, etc.) and start editing.
-6. Fork my git repo to create your own separate thread to store your code, or create a completely new one of your own if you want to have it be private etc.
-7. When ready to build and deploy the site, type `parcel build index.js`. Parcel will create a `dist` folder which will be your production ready folder to be pushed to your server. 
-8. Depending on your server/hosting setup, you can compress the `dist` folder into a .zip file and push, or use ssh, gihub, whatever
+3. Type `parcel index.html`: this will automatically install dependencies and start a development server. Note -- this automatically creates a `dist` folder that is the compiled code. Don't edit anything in here.
+4. Open up files (`index.html`, `styles.scss`, etc.) and start editing.
+5. If you want to save your new version, create a github account and fork my git repo to create your own separate thread to store your code, or create a completely new one of your own if you want to have it be private etc.
+
+### Build process
+
+1. When ready to build and deploy the site, type `parcel build index.js`. Parcel will create a `dist` folder which will be your production ready folder to be pushed to your server. 
+2. Depending on your server/hosting setup, you can compress the `dist` folder into a .zip file and push, or use ssh, gihub, whatever
 you use.
+
+### Live server and build bugs to be aware of
+
+1. Sometimes changes you make don't show up in the browser when you save and refresh the page. If you find your changes aren't working or you're seeing other issues, you may need to
+a) quit and restart the dev server: 
+- type `control` and `c` to quit;
+- then `parcel index.html` to restart 
+b) delete the `dist` folder and rerun the build process to get a fresh copy:
+- open `dist` folder;
+- delete all files EXCEPT the .htaccess;
+- go back to your terminal and run `parcel index.html`;
+- this will rebuild the dist folder and you should be good to go.
+c) when creating new pages, parcel may throw an error if you create a link to a new page BEFORE creating the new page. To prevent this, first create and save a new .html page, THEN link to that page in your code.
 
 ## HTML
 

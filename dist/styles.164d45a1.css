@@ -11257,7 +11257,7 @@ button.bg-dark:focus {
   padding-top: 1.5rem !important;
 }
 
-.pr-4,
+.pr-4, .nav-item,
 .px-4 {
   padding-right: 1.5rem !important;
 }
@@ -13270,7 +13270,7 @@ button.bg-dark:focus {
   text-transform: capitalize !important;
 }
 
-.font-weight-light {
+.font-weight-light, .nav-item {
   font-weight: 300 !important;
 }
 
@@ -13282,7 +13282,7 @@ button.bg-dark:focus {
   font-weight: 400 !important;
 }
 
-.font-weight-bold, .active {
+.font-weight-bold, .active, .nav-item.active {
   font-weight: 700 !important;
 }
 
@@ -13503,6 +13503,14 @@ h3 {
 }
 .navbar {
   transition: all 0.3s ease-in-out;
+}
+
+.nav-item {
+  color: #666666;
+}
+
+.nav-item.active {
+  color: inherit;
 }
 
 .navbar-brand > img {
@@ -13764,6 +13772,7 @@ html.is-animating .transition-fadeInDown {
   }
 }
 body {
+  color: #222222;
   background: #F5F5F5;
   font: "Helvetica Neue", sans-serif;
   overflow-x: hidden;

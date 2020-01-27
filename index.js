@@ -69,15 +69,6 @@ const navScroll = () => {
     }
 };
 
-// add active state on resume click
-
-const resumeActive = () => {
-    const resumeLink = document.getElementById("resumeActive");resumeLink.addEventListener("click", function() { 
-        resumeLink.classList.add("font-weight-bold");
-    });
-  }
-resumeActive();
-
 // init all functions
 navAttribute();
 scrollTopPageChange();
@@ -96,6 +87,5 @@ swup.on('contentReplaced', () => {
     aosAnimate();
     scrollTopButton();
     smoothscroll.polyfill();
-    resumeActive();
 });
 

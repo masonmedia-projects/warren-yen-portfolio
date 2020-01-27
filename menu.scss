@@ -4,6 +4,19 @@
   transition: all .3s ease-in-out;
 }
 
+.nav-item {
+  @extend .pr-4;
+}
+
+.nav-item {
+  color: #666666;
+  @extend .font-weight-light;
+}
+.nav-item.active {
+  color: inherit;
+  @extend .font-weight-bold;
+}
+
 .navbar-brand > img {
   width: 130px;
 }

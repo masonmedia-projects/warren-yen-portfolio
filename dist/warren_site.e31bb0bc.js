@@ -19828,17 +19828,8 @@ var navScroll = function navScroll() {
       myNav.classList.remove("bg-white", "shadow");
     }
   };
-}; // add active state on resume click
+}; // init all functions
 
-
-var resumeActive = function resumeActive() {
-  var resumeLink = document.getElementById("resumeActive");
-  resumeLink.addEventListener("click", function () {
-    resumeLink.classList.add("font-weight-bold");
-  });
-};
-
-resumeActive(); // init all functions
 
 navAttribute();
 scrollTopPageChange();
@@ -19859,8 +19850,6 @@ swup.on('contentReplaced', function () {
   scrollTopButton();
 
   _smoothscrollPolyfill.default.polyfill();
-
-  resumeActive();
 });
 },{"bootstrap":"node_modules/bootstrap/dist/js/bootstrap.js","jquery":"node_modules/jquery/dist/jquery.js","swup":"node_modules/swup/lib/index.js","aos":"node_modules/aos/dist/aos.js","smoothscroll-polyfill":"node_modules/smoothscroll-polyfill/dist/smoothscroll.js","./styles.scss":"styles.scss"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -19890,7 +19879,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51223" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57190" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

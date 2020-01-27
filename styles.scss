@@ -8,6 +8,7 @@ $home-font: 'Helvetica Neue', sans-serif;
 body {
     @extend .bg-light;
     @extend .fadeIn;
+    color: #222222;
     background: #F5F5F5;
     font: $home-font;
     overflow-x: hidden;
