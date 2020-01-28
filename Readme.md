@@ -68,18 +68,23 @@ i.e. You could use the following to have left-aligned content on desktop and tab
 
 ### Adding pages/projects
 
-You'll want to add new pages in the root folder (same folder as `index.html` and `about.html`). You can use the index.html page as a template: copy it, create a new file, paste in the code and make your edits.
+You'll want to add new pages in the root folder (same folder as `index.html` and `about.html`). You can use the `jaxxliberty.html` page as a template: 
+- copy all the HTML;
+- create a new file [`command n`];
+- paste in the code;
+- save the file as `whateverproject.html`
+- THEN go back and link to that new page on the `index.html`.
 
 ### Layout
 
 #### Home
 
 1. Be aware that card titles and text length will need to be relatively similar throughout if you want to keep the heights the same. Longer text in one card will force the entire card element down to accomodate.
-2. On the home page, the main page container uses a `.container-fluid` class, which has less padding. On the detail page, your mockups had more padding so I used the `.container` class. You can swap between them if you feel there is 
+2. On the home page, the main page container uses a `.container-fluid` class, which has less padding. On the detail page, your mockups had more padding so I used the `.container` class. The difference is mostly on desktop. As requested, the padding on mobile is the same.
 
-#### Detail [Jaxx Liberty]
+#### Detail [jaxxliberty + metricdashbaord]
 
-The Jaxx Liberty page serves as your project detail template. Create a new file in the root directory, call it whatever the new project is, copy all the code from Jaxx Liberty and you're set to start editing. As mentioned, components are commented so you can combine whatever you need.
+The Jaxx Liberty page serves as your project detail template. Components are commented so you can copy, paste, and combine whatever you need.
 
 ### Copying/pasting components
 
@@ -89,7 +94,7 @@ The basic 2-card component is commented `<!-- 2-card component -->`. Inside of t
 
 ### Images
 
-Put your images in the `img` folder. In the `parcel build index.js` process, they get minified and optimized automatically.
+Put your images in the `img` folder. In the `parcel build index.js` process, they get minified and optimized automatically. Link to images by starting with the img folder, and then the image name itself: `<img href="/img/path-to-img.jpg">`.
 
 ### Animation
 
