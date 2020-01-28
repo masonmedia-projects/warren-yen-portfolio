@@ -8,11 +8,10 @@
 4. Open up files (`index.html`, `styles.scss`, etc.) and start editing.
 5. If you want to save your new version, create a github account and fork my git repo to create your own separate thread to store your code, or create a completely new one of your own if you want to have it be private etc.
 
-### Build process
+### Build process + Deploying
 
-1. When ready to build and deploy the site, type `parcel build index.js`. Parcel will create a `dist` folder which will be your production ready folder to be pushed to your server. 
-2. Depending on your server/hosting setup, you can compress the `dist` folder into a .zip file and push, or use ssh, gihub, whatever
-you use.
+1. When you're ready to build and deploy the site, type `parcel build index.js`. Parcel will create a new `dist` folder which will have all your production-ready files minified, images compressed, css auto-prefixed, etc. You'll push this folder to your server. 
+2. My hosting/server uses cPanel and is old school and doesn't use SSH, so I zip the dist folder, upload it to my domain root folder, and extract/uncompress the zip. Yours may use FTP, not sure - I can run over this with you as well.
 
 ### Dev server and build bugs to be aware of
 
