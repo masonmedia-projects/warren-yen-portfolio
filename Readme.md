@@ -3,7 +3,7 @@
 ## Setup
 
 1. Clone/download repo from github [here](https://github.com/masonmedia/warren_yen_portfolio).
-2. Open terminal (on Mac press command + space bar to open a search window, and type `terminal`). In the Terminal window type `cd` (change directory) into the project folder (`cd warren_yen_portfolio`).
+2. Open terminal (on Mac press command + space bar to open a search window, and type `terminal`). In the Terminal window type `cd` (change directory) into the project folder (`cd warren_yen_portfolio`). You can rename this folder to whatever you want. 
 3. Type `parcel index.html`: this will automatically install dependencies and start a development server. Note -- this automatically creates a `dist` folder that is the compiled code. Don't edit anything in here.
 4. Open up files (`index.html`, `styles.scss`, etc.) and start editing.
 5. If you want to save your new version, create a github account and fork my git repo to create your own separate thread to store your code, or create a completely new one of your own if you want to have it be private etc.
