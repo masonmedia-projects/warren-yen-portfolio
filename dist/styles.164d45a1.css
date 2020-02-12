@@ -13885,6 +13885,41 @@ button:focus {
   background-size: cover;
 }
 
+.bg--metrics {
+  background: url("/metrics-bg.67ab2545.png") center;
+  background-size: cover;
+}
+
+.bg--jaxxio {
+  background: url("/jaxxio-bg.e3da7310.png") center;
+  background-size: cover;
+}
+
+.bg--decentraltv {
+  background: url("/decentraltv-bg.c7a144e9.png") center;
+  background-size: cover;
+}
+
+.bg--eurofab {
+  background: url("/eurofab-bg.e1e1e16c.png") center;
+  background-size: cover;
+}
+
+.bg--omniwallet {
+  background: url("/omniwallet-bg.2e2f7bd7.png") center;
+  background-size: cover;
+}
+
+.bg--maclaw {
+  background: url("/maclaw-bg.e7d51162.png") center;
+  background-size: cover;
+}
+
+.bg--hypersportauto {
+  background: url("/hypersportauto-bg.61b12d55.png") center;
+  background-size: cover;
+}
+
 .card {
   text-decoration: none;
   transition: 0.2s ease-in-out;

@@ -10940,7 +10940,7 @@ exports.default = void 0;
 
 /**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.
- * @version 1.16.0
+ * @version 1.16.1
  * @license
  * Copyright (c) 2016 Federico Zivolo and contributors
  *
@@ -11297,7 +11297,7 @@ function includeScroll(rect, element) {
 function getBordersSize(styles, axis) {
   var sideA = axis === 'x' ? 'Left' : 'Top';
   var sideB = sideA === 'Left' ? 'Right' : 'Bottom';
-  return parseFloat(styles['border' + sideA + 'Width'], 10) + parseFloat(styles['border' + sideB + 'Width'], 10);
+  return parseFloat(styles['border' + sideA + 'Width']) + parseFloat(styles['border' + sideB + 'Width']);
 }
 
 function getSize(axis, body, html, computedStyle) {
@@ -11442,8 +11442,8 @@ function getOffsetRectRelativeToArbitraryNode(children, parent) {
   var parentRect = getBoundingClientRect(parent);
   var scrollParent = getScrollParent(children);
   var styles = getStyleComputedProperty(parent);
-  var borderTopWidth = parseFloat(styles.borderTopWidth, 10);
-  var borderLeftWidth = parseFloat(styles.borderLeftWidth, 10); // In cases where the parent is fixed, we must ignore negative scroll in offset calc
+  var borderTopWidth = parseFloat(styles.borderTopWidth);
+  var borderLeftWidth = parseFloat(styles.borderLeftWidth); // In cases where the parent is fixed, we must ignore negative scroll in offset calc
 
   if (fixedPosition && isHTML) {
     parentRect.top = Math.max(parentRect.top, 0);
@@ -11463,8 +11463,8 @@ function getOffsetRectRelativeToArbitraryNode(children, parent) {
   // the box of the documentElement, in the other cases not.
 
   if (!isIE10 && isHTML) {
-    var marginTop = parseFloat(styles.marginTop, 10);
-    var marginLeft = parseFloat(styles.marginLeft, 10);
+    var marginTop = parseFloat(styles.marginTop);
+    var marginLeft = parseFloat(styles.marginLeft);
     offsets.top -= borderTopWidth - marginTop;
     offsets.bottom -= borderTopWidth - marginTop;
     offsets.left -= borderLeftWidth - marginLeft;
@@ -12404,8 +12404,8 @@ function arrow(data, options) {
   // take popper margin in account because we don't have this info available
 
   var css = getStyleComputedProperty(data.instance.popper);
-  var popperMarginSide = parseFloat(css['margin' + sideCapitalized], 10);
-  var popperBorderSide = parseFloat(css['border' + sideCapitalized + 'Width'], 10);
+  var popperMarginSide = parseFloat(css['margin' + sideCapitalized]);
+  var popperBorderSide = parseFloat(css['border' + sideCapitalized + 'Width']);
   var sideValue = center - data.offsets.popper[side] - popperMarginSide - popperBorderSide; // prevent arrowElement from being placed not contiguously to its popper
 
   sideValue = Math.max(Math.min(popper[len] - arrowElementSize, sideValue), 0);
@@ -19744,7 +19744,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/node_modules/animate.css/animate.css":"node_modules/animate.css/animate.css","/Users/andrewmason/Projects/warren_site/img/jaxx-bg.png":[["jaxx-bg.b78de2bb.png","img/jaxx-bg.png"],"img/jaxx-bg.png"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"/node_modules/animate.css/animate.css":"node_modules/animate.css/animate.css","/Users/andrewmason/Projects/warren_site/img/jaxx-bg.png":[["jaxx-bg.b78de2bb.png","img/jaxx-bg.png"],"img/jaxx-bg.png"],"/Users/andrewmason/Projects/warren_site/img/metrics-bg.png":[["metrics-bg.67ab2545.png","img/metrics-bg.png"],"img/metrics-bg.png"],"/Users/andrewmason/Projects/warren_site/img/jaxxio-bg.png":[["jaxxio-bg.e3da7310.png","img/jaxxio-bg.png"],"img/jaxxio-bg.png"],"/Users/andrewmason/Projects/warren_site/img/decentraltv-bg.png":[["decentraltv-bg.c7a144e9.png","img/decentraltv-bg.png"],"img/decentraltv-bg.png"],"/Users/andrewmason/Projects/warren_site/img/eurofab-bg.png":[["eurofab-bg.e1e1e16c.png","img/eurofab-bg.png"],"img/eurofab-bg.png"],"/Users/andrewmason/Projects/warren_site/img/omniwallet-bg.png":[["omniwallet-bg.2e2f7bd7.png","img/omniwallet-bg.png"],"img/omniwallet-bg.png"],"/Users/andrewmason/Projects/warren_site/img/maclaw-bg.png":[["maclaw-bg.e7d51162.png","img/maclaw-bg.png"],"img/maclaw-bg.png"],"/Users/andrewmason/Projects/warren_site/img/hypersportauto-bg.png":[["hypersportauto-bg.61b12d55.png","img/hypersportauto-bg.png"],"img/hypersportauto-bg.png"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("bootstrap");
@@ -19879,7 +19879,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49502" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63540" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

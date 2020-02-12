@@ -1,0 +1,69 @@
+// navigation/menu
+
+.navbar {
+  transition: all .3s ease-in-out;
+}
+
+.nav-item {
+  @extend .pr-4;
+}
+
+.nav-item {
+  color: #666666;
+  @extend .font-weight-light;
+}
+
+.navbar-brand > img {
+  width: 130px;
+}
+
+// menu active class
+
+.active {
+  @extend .font-weight-bold;
+  color: #222222;
+}
+
+
+// hamburger X
+
+.icon-bar {
+	width: 22px; 
+	height: 2px;
+  background-color: #000;
+	display: block;
+	transition: all 0.3s;
+	margin-top: 4px
+}
+ 
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+// animation
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+ 
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+ 
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+ 
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+ 
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+ 
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}

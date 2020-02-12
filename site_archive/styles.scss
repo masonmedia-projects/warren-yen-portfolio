@@ -1,0 +1,221 @@
+@import '~bootstrap/scss/bootstrap';
+@import '/node_modules/animate.css/animate.css';
+@import '/menu.scss';
+@import '/animations.scss';
+
+$home-font: 'Helvetica Neue', sans-serif;
+
+body {
+    @extend .bg-light;
+    @extend .fadeIn;
+    color: #222222;
+    background: #F5F5F5;
+    font: $home-font;
+    overflow-x: hidden;
+    @extend .w-100;
+    max-width: 100%;
+}
+
+main {
+    overflow-x: hidden;
+    @extend .w-100;
+    max-width: 100%;
+}
+
+// mixins
+
+@mixin flex($direction, $justify, $align, $text ) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $text;
+}
+
+.flex-center {
+    @include flex(column, center, center, center);   
+}
+.flex-left {
+    @include flex(column, center, flex-start, left);   
+}
+.flex-right {
+    @include flex(column, center, flex-end, right);   
+}
+
+// links
+
+a {
+    color: inherit;
+    transition: .2s ease-in-out;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: #000;
+}
+
+a:focus {
+    outline:0;
+}
+
+button:focus {
+    outline:0;
+}
+
+// external links
+
+.x-link {
+    color: $primary;
+}
+.x-link:hover {
+    text-decoration: underline;
+}
+
+// utilities
+
+// height
+
+.min-25 {
+    min-height: 25vh;
+}
+.min-50 {
+    min-height: 50vh;
+}
+.min-75 {
+    min-height: 75vh;
+}
+.min-100 {
+    min-height: 100vh;
+}
+
+// position
+
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
+}
+.right {
+    right: 0;
+}
+.left {
+    left: 0;
+}
+
+// colors
+
+.bg-white {
+    background: #fff;
+}
+
+// images
+
+.img {
+    @extend .w-100;
+    height: auto;   
+}
+.img-full {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+// background images
+
+@mixin bgImg($url, $size, $position, $attachment) {
+    background: $url;
+    background-size: $size;
+    background-position: $position;
+    background-attachment: $attachment;
+}
+
+.bg--jaxx {
+    background: url("/img/jaxx-bg.png") center;
+    background-size: cover;
+}
+
+// card styles
+
+.card {
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
+
+.card:hover, 
+.card:focus {
+    box-shadow: 0 0 20px #000;
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.card-img, .card-img-top {
+    flex-shrink: 0;
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}  
+
+// delays
+
+.delay-01 {
+    animation-delay: .1s;
+}
+.delay-03 {
+    animation-delay: .3s;
+}
+.delay-06 {
+    animation-delay: .6s;
+}
+.delay-09 {
+    animation-delay: .9s;
+}
+
+  
+
+// scroll to top button
+
+#scrollTop > p {
+    transition: all .3s ease-in-out;
+}
+#scrollTop > p:hover {
+    @extend .text-light, .bg-dark, .border-dark;
+    cursor: pointer;
+}
+
+// media queries
+
+// add bottom border on nav links mobile menu
+@media (max-width: 992px) {
+    .nav-link {
+        border-bottom: 1px solid lightgrey;   
+        padding: 13px 0;
+    }
+    .navbar-nav li:nth-of-type(1) {
+        border-top: 1px solid lightgrey;   
+    }
+}
+
+// center content class on mobile
+@media (max-width: 768px) {
+    .flex-center-sm {
+        @include flex(column, center, center, center);   
+    }
+    .container {
+        padding: 3rem;
+    }
+}
+
+// reduce container padding on mobile
+@media (max-width: 601px) {
+    .container {
+        padding: 22px;
+    }
+    .jumbotron {
+        margin-top: 30px;
+    }
+}
+
+
+
+
