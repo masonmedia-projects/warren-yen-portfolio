@@ -35,6 +35,11 @@ main {
 .flex-center {
     @include flex(column, center, center, center);   
 }
+
+.flex-center-row {
+    @include flex(row, center, center, center);   
+}
+
 .flex-left {
     @include flex(column, center, flex-start, left);   
 }
@@ -216,6 +221,13 @@ button:focus {
 #scrollTop > p:hover {
     @extend .text-light, .bg-dark, .border-dark;
     cursor: pointer;
+}
+
+// footer
+
+footer span {
+    @extend .font-weight-light;
+    color: #666666;
 }
 
 // media queries

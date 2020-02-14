@@ -47,15 +47,6 @@ const scrollTopPageChange = () => {
     window.scrollTo(0, 0);
 }
 
-// scroll to top
-const scrollTopButton = () => {
-    let scrollBtn = document.getElementById("scrollTop");
-    scrollBtn.addEventListener("click", scrollTop);
-    function scrollTop() {
-        document.querySelector('#swup').scrollIntoView({ behavior: 'smooth' });
-    }  
-};
-
 // nav color change on scroll
 const navScroll = () => {
     const myNav = document.getElementById('myNav');
@@ -74,7 +65,6 @@ navAttribute();
 scrollTopPageChange();
 copyright();
 aosAnimate();
-scrollTopButton();
 smoothscroll.polyfill();
 navScroll();
 
@@ -85,7 +75,6 @@ swup.on('contentReplaced', () => {
     navScroll();
     copyright();
     aosAnimate();
-    scrollTopButton();
     smoothscroll.polyfill();
 });
 

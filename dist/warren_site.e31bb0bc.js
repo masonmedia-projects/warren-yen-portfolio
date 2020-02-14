@@ -19804,18 +19804,14 @@ var aosAnimate = function aosAnimate() {
 var scrollTopPageChange = function scrollTopPageChange() {
   window.scrollTo(0, 0);
 }; // scroll to top
-
-
-var scrollTopButton = function scrollTopButton() {
-  var scrollBtn = document.getElementById("scrollTop");
-  scrollBtn.addEventListener("click", scrollTop);
-
-  function scrollTop() {
-    document.querySelector('#swup').scrollIntoView({
-      behavior: 'smooth'
-    });
-  }
-}; // nav color change on scroll
+// const scrollTopButton = () => {
+//     let scrollBtn = document.getElementById("scrollTop");
+//     scrollBtn.addEventListener("click", scrollTop);
+//     function scrollTop() {
+//         document.querySelector('#swup').scrollIntoView({ behavior: 'smooth' });
+//     }  
+// };
+// nav color change on scroll
 
 
 var navScroll = function navScroll() {
@@ -19835,7 +19831,6 @@ navAttribute();
 scrollTopPageChange();
 copyright();
 aosAnimate();
-scrollTopButton();
 
 _smoothscrollPolyfill.default.polyfill();
 
@@ -19847,7 +19842,6 @@ swup.on('contentReplaced', function () {
   navScroll();
   copyright();
   aosAnimate();
-  scrollTopButton();
 
   _smoothscrollPolyfill.default.polyfill();
 });
@@ -19879,7 +19873,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63540" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59252" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
