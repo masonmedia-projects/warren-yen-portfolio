@@ -211,18 +211,6 @@ button:focus {
     animation-delay: .9s;
 }
 
-  
-
-// scroll to top button
-
-#scrollTop > p {
-    transition: all .3s ease-in-out;
-}
-#scrollTop > p:hover {
-    @extend .text-light, .bg-dark, .border-dark;
-    cursor: pointer;
-}
-
 // footer
 
 footer span {

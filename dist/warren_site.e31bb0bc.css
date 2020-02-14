@@ -9689,7 +9689,7 @@ button.bg-light:focus {
   background-color: #dae0e5 !important;
 }
 
-.bg-dark, #scrollTop > p:hover {
+.bg-dark {
   background-color: #343a40 !important;
 }
 
@@ -9775,7 +9775,7 @@ button.bg-dark:focus {
   border-color: #f8f9fa !important;
 }
 
-.border-dark, #scrollTop > p:hover {
+.border-dark {
   border-color: #343a40 !important;
 }
 
@@ -13346,7 +13346,7 @@ a.text-danger:hover, a.text-danger:focus {
   color: #a71d2a !important;
 }
 
-.text-light, #scrollTop > p:hover {
+.text-light {
   color: #f8f9fa !important;
 }
 
@@ -13961,14 +13961,6 @@ button:focus {
 
 .delay-09 {
   animation-delay: 0.9s;
-}
-
-#scrollTop > p {
-  transition: all 0.3s ease-in-out;
-}
-
-#scrollTop > p:hover {
-  cursor: pointer;
 }
 
 footer span {

@@ -19803,15 +19803,7 @@ var aosAnimate = function aosAnimate() {
 
 var scrollTopPageChange = function scrollTopPageChange() {
   window.scrollTo(0, 0);
-}; // scroll to top
-// const scrollTopButton = () => {
-//     let scrollBtn = document.getElementById("scrollTop");
-//     scrollBtn.addEventListener("click", scrollTop);
-//     function scrollTop() {
-//         document.querySelector('#swup').scrollIntoView({ behavior: 'smooth' });
-//     }  
-// };
-// nav color change on scroll
+}; // nav color change on scroll
 
 
 var navScroll = function navScroll() {
@@ -19873,7 +19865,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59252" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59983" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
