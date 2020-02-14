@@ -13784,6 +13784,10 @@ main {
   max-width: 100%;
 }
 
+.container {
+  width: 800px;
+}
+
 .flex-center {
   display: flex;
   flex-direction: column;
@@ -13988,6 +13992,7 @@ footer span {
 
   .container {
     padding: 3rem;
+    width: inherit;
   }
 }
 @media (max-width: 601px) {

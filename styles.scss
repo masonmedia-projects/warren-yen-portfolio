@@ -22,6 +22,10 @@ main {
     max-width: 100%;
 }
 
+.container {
+    width: 800px;
+}
+
 // mixins
 
 @mixin flex($direction, $justify, $align, $text ) {
@@ -238,6 +242,7 @@ footer span {
     }
     .container {
         padding: 3rem;
+        width: inherit;
     }
 }
 
