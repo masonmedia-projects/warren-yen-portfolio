@@ -13270,7 +13270,7 @@ button.bg-dark:focus {
   text-transform: capitalize !important;
 }
 
-.font-weight-light, footer span, .nav-item {
+.font-weight-light, .nav-item {
   font-weight: 300 !important;
 }
 
@@ -13846,6 +13846,47 @@ button:focus {
   text-decoration: underline;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #444444;
+}
+
+#home h3 {
+  font-size: 1.75rem;
+  color: #222222;
+}
+
+p {
+  font-weight: 100;
+}
+
+.jumbotron p {
+  font-size: 1.3rem;
+  font-weight: 100;
+  line-height: 130%;
+}
+
+footer p,
+footer span {
+  font-size: 14px;
+  font-weight: 100;
+  color: #666666;
+  transition: all 0.3s ease-in-out;
+}
+
+footer span:hover {
+  text-decoration: underline;
+  color: #222222;
+}
+
+footer img {
+  width: 23px;
+}
+
 .min-25 {
   min-height: 25vh;
 }
@@ -13951,6 +13992,12 @@ button:focus {
   border-top-right-radius: 0;
 }
 
+.card p:nth-of-type(2) {
+  color: #888888;
+  margin-bottom: -10px;
+  font-weight: 100;
+}
+
 .delay-01 {
   animation-delay: 0.1s;
 }
@@ -13965,10 +14012,6 @@ button:focus {
 
 .delay-09 {
   animation-delay: 0.9s;
-}
-
-footer span {
-  color: #666666;
 }
 
 @media (max-width: 992px) {
