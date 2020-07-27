@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../../usr/local/lib/node_modules/parcel-bundler/node_modules/process/browser.js":[function(require,module,exports) {
+})({"../../../../../usr/local/lib/node_modules/parcel-bundler/node_modules/process/browser.js":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {}; // cached from whatever global is present so that test runners that stub it
@@ -10929,7 +10929,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{"process":"../../../../usr/local/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/popper.js/dist/esm/popper.js":[function(require,module,exports) {
+},{"process":"../../../../../usr/local/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"node_modules/popper.js/dist/esm/popper.js":[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
 
@@ -19666,7 +19666,7 @@ var define;
 
 }());
 
-},{}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -19698,7 +19698,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -19733,18 +19733,18 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/animate.css/animate.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"node_modules/animate.css/animate.css":[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles.scss":[function(require,module,exports) {
+},{"_css_loader":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"styles.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/node_modules/animate.css/animate.css":"node_modules/animate.css/animate.css","/Users/andrewmason/Projects/warren_site/img/jaxx-bg.png":[["jaxx-bg.b78de2bb.png","img/jaxx-bg.png"],"img/jaxx-bg.png"],"/Users/andrewmason/Projects/warren_site/img/metrics-bg.png":[["metrics-bg.67ab2545.png","img/metrics-bg.png"],"img/metrics-bg.png"],"/Users/andrewmason/Projects/warren_site/img/jaxxio-bg.png":[["jaxxio-bg.e3da7310.png","img/jaxxio-bg.png"],"img/jaxxio-bg.png"],"/Users/andrewmason/Projects/warren_site/img/decentraltv-bg.png":[["decentraltv-bg.c7a144e9.png","img/decentraltv-bg.png"],"img/decentraltv-bg.png"],"/Users/andrewmason/Projects/warren_site/img/eurofab-bg.png":[["eurofab-bg.e1e1e16c.png","img/eurofab-bg.png"],"img/eurofab-bg.png"],"/Users/andrewmason/Projects/warren_site/img/omniwallet-bg.png":[["omniwallet-bg.2e2f7bd7.png","img/omniwallet-bg.png"],"img/omniwallet-bg.png"],"/Users/andrewmason/Projects/warren_site/img/maclaw-bg.png":[["maclaw-bg.e7d51162.png","img/maclaw-bg.png"],"img/maclaw-bg.png"],"/Users/andrewmason/Projects/warren_site/img/hypersportauto-bg.png":[["hypersportauto-bg.61b12d55.png","img/hypersportauto-bg.png"],"img/hypersportauto-bg.png"],"_css_loader":"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"/node_modules/animate.css/animate.css":"node_modules/animate.css/animate.css","/Users/andrewmason/Projects/warren_yen/warren_site/img/jaxx-bg.png":[["jaxx-bg.b78de2bb.png","img/jaxx-bg.png"],"img/jaxx-bg.png"],"/Users/andrewmason/Projects/warren_yen/warren_site/img/metrics-bg.png":[["metrics-bg.67ab2545.png","img/metrics-bg.png"],"img/metrics-bg.png"],"/Users/andrewmason/Projects/warren_yen/warren_site/img/jaxxio-bg.png":[["jaxxio-bg.e3da7310.png","img/jaxxio-bg.png"],"img/jaxxio-bg.png"],"/Users/andrewmason/Projects/warren_yen/warren_site/img/decentraltv-bg.png":[["decentraltv-bg.c7a144e9.png","img/decentraltv-bg.png"],"img/decentraltv-bg.png"],"/Users/andrewmason/Projects/warren_yen/warren_site/img/eurofab-bg.png":[["eurofab-bg.e1e1e16c.png","img/eurofab-bg.png"],"img/eurofab-bg.png"],"/Users/andrewmason/Projects/warren_yen/warren_site/img/omniwallet-bg.png":[["omniwallet-bg.2e2f7bd7.png","img/omniwallet-bg.png"],"img/omniwallet-bg.png"],"/Users/andrewmason/Projects/warren_yen/warren_site/img/maclaw-bg.png":[["maclaw-bg.e7d51162.png","img/maclaw-bg.png"],"img/maclaw-bg.png"],"/Users/andrewmason/Projects/warren_yen/warren_site/img/hypersportauto-bg.png":[["hypersportauto-bg.61b12d55.png","img/hypersportauto-bg.png"],"img/hypersportauto-bg.png"],"_css_loader":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("bootstrap");
@@ -19837,7 +19837,7 @@ swup.on('contentReplaced', function () {
 
   _smoothscrollPolyfill.default.polyfill();
 });
-},{"bootstrap":"node_modules/bootstrap/dist/js/bootstrap.js","jquery":"node_modules/jquery/dist/jquery.js","swup":"node_modules/swup/lib/index.js","aos":"node_modules/aos/dist/aos.js","smoothscroll-polyfill":"node_modules/smoothscroll-polyfill/dist/smoothscroll.js","./styles.scss":"styles.scss"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"bootstrap":"node_modules/bootstrap/dist/js/bootstrap.js","jquery":"node_modules/jquery/dist/jquery.js","swup":"node_modules/swup/lib/index.js","aos":"node_modules/aos/dist/aos.js","smoothscroll-polyfill":"node_modules/smoothscroll-polyfill/dist/smoothscroll.js","./styles.scss":"styles.scss"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -19865,7 +19865,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63515" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61544" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -20041,5 +20041,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/warren_site.e31bb0bc.js.map
