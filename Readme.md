@@ -1,5 +1,13 @@
 # Warren Yen Home Site
 
+<img src="img/wy_browser_screen.png"
+     alt="janicemasonsteeves.com homepage banner photo"
+     style="width: 100%; float: left; margin: 0 auto;" />
+
+## Intro
+
+A website build for Toronto UI/UX and graphic designer Warren Yen. The site was built from a design provided by the client, using HTML, Bootstrap 4, SASS, Javascript and parcel bundler. The client required ability to edit the site himself which required clear, component-style architecture that allowed for easy replication and editing.
+
 ## Setup
 
 1. Clone/download repo from github [here](https://github.com/masonmedia/warren_yen_portfolio).
