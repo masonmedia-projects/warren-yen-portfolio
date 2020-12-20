@@ -1,7 +1,7 @@
 # Warren Yen Home Site
 
 <img src="img/wy_browser_screen.png"
-     alt="janicemasonsteeves.com homepage banner photo"
+     alt="warrenyen.com homepage banner photo"
      style="width: 100%; float: left; margin: 0 auto;" />
 
 ## Intro
