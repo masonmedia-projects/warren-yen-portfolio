@@ -117,3 +117,7 @@ I use VS Code (same as Decentral). It has a built-in terminal and github connect
 ### Resume
 
 Put your CV file in the root folder. In the `nav` find the `Resume` link and paste in the url (i.e. `src="/warren_yen_cv.pdf"`).
+
+### License
+
+Copyright 2020 Andrew Mason and Warren Yen.  Please see `License.md` file for license information.
